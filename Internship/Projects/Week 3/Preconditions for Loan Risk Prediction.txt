@@ -1,0 +1,8 @@
+Project: Loan Risk prediction
+
+Team 2
+Develop a clustering model to segment bank customers
+(K=3)
+Identify the chances of improving the model
+
+Optimal value of K(best value of K for respective model)

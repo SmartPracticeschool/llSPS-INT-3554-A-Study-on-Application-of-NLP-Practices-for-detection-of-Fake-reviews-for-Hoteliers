@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>
+        Hospital Readmittion ANN Prediction
+    </title>
+
+
+    <style>
+    .heading{
+            text-align: center;
+            color:rgb(0, 0, 0); 
+    }
+    body{
+        background: content-box radial-gradient(rgb(20, 87, 220), skyblue);
+    }
+
+    .mini-heading
+    {
+        text-align: center;
+        color:rgb(72, 0, 255);
+    }
+
+    .whiteclass
+    {
+        text-align: left;
+        color:white;
+
+    }
+
+    .submitbutton
+    {
+        padding: 10px;
+    }
+
+    .checksomething
+    {
+        background-color: rgba(10, 9, 9, 0.411);
+    }
+
+    .prediction
+    {
+        text-align: center;
+        color:white;
+    }
+
+    </style>
+</head>
+
+<body>
+     {{form.hidden_tag()}}
+    <h1 class='heading'>
+         ANN Deployment via FLASK
+    </h1>
+
+    <h3 style="color:rgb(167, 0, 0);text-align:center;">
+        
+        Please type in the values and let the ANN model predict!
+    </h3>
+    <div class="row justify-content-center checksomething">
+                                        <form class="user formtoenter" method="POST" action="">
+                                                {{form.hidden_tag()}}
+
+
+                                            <div class="form-group whiteclass">
+                                                {{ form.number_inpatient.label(class="form-control-label") }}
+                                            </div>
+                                            <div>
+                                                {{ form.number_inpatient()}}
+                                            </div>
+
+
+
+                                            <div class="form-group whiteclass">
+                                                    {{ form.number_emergency.label(class="form-control-label") }}
+                                                </div>
+                                                <div>
+                                                    {{ form.number_emergency}}
+                                                </div>
+
+
+
+
+
+                                                <div class="form-group whiteclass">
+                                                        {{ form.number_outpatient.label(class="form-control-label") }}
+                                                    </div>
+                                                    <div>
+                                                        {{ form.number_outpatient}}
+                                                    </div>
+
+
+
+
+
+                                                    <div class="form-group whiteclass">
+                                                            {{ form.discharge_disposition_id.label(class="form-control-label") }}
+                                                        </div>
+                                                        <div>
+                                                            {{ form.discharge_disposition_id}}
+                                                        </div>
+
+
+
+
+                                                        <div class="form-group whiteclass">
+                                                                {{ form.num_lab_procedures.label(class="form-control-label") }}
+                                                            </div>
+                                                            <div>
+                                                                {{ form.num_lab_procedures}}
+                                                            </div>
+
+                                                
+                                                            <div class="form-group whiteclass">
+                                                                {{ form.num_medications.label(class="form-control-label") }}
+                                                            </div>
+                                                            <div>
+                                                                {{ form.num_medications}}
+                                                            </div>
+
+                                            <div class='text-center submitbutton'>
+                                                    {{ form.submit(class='class="btn btn-primary') }}
+                                            </div>
+                                            
+                                        </form>
+                                        <div class='prediction'>
+                                                <h1>
+                                                        {{prediction_text}}
+                                                </h1>   
+                                        
+                                            </div>
+    </div>
+
+   
+   
+
+</body>

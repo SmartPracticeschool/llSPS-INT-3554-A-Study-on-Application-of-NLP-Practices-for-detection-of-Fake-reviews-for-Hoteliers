@@ -1,0 +1,21 @@
+Four groups
+
+
+1. Simple Linear Regression Methods
+
+seond group - 2 students---- Ozone & Temperature DONE
+
+2. Multiple Linear Regression Methods
+
+second group - 2 students --- Ozone & Solar.R + Wind
+
+
+3. Compare the models
+
+Model_name  Input variables     Output variable    RMSE   R2_Score
+model1        Solar.R             Ozone 
+model 2       Solar.R, Temp       Ozone   
+
+
+
+The best model is the one with least RMSE and high R2_Score             

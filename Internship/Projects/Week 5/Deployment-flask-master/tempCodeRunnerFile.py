@@ -1,0 +1,1 @@
+odel = load_model('ANN.h5')

@@ -1,0 +1,9 @@
+Project:Employee-Attrition
+
+Team2:
+Attrition <- select indpendent features
+Develop classifiers to predict employee attrition
+Logistic Regression, Decision Tree, Random Forest      
+
+
+		Training Dataset = 80% ;Test Data=20%

@@ -1,0 +1,13 @@
+
+Simple Linear Regression models
+
+Second group of 2 students --
+1.Dep Delay vs ArrDelay
+
+
+Multiple Linear Regression Models
+
+2. Second Group of 2 students --
+Arr Delay vs AirTime + DepDelay + TaxiIn
+
+

@@ -1,0 +1,15 @@
+Project Diabetes
+
+Team2:
+Develop Classification models with
+Diabetes <- Pregnancies +Glucose + BMI
+Algorithms <- kNN, Logistic Regression, SVM
+
+Commonly all three teams shall develop one classifier independently using Random Forest
+
+Compare all the models by generating metrics:
+1.Accuracy
+2.Confusion Matrix
+3.Precision and Recall
+4.ROC AUC curves
+

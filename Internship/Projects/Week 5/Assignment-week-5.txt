@@ -1,0 +1,9 @@
+1. Identify own/suitable predictors and the target variable i.e. readmitted
+
+2. Develop an ANN classifier with select predcitors and target
+
+3. Also develop conventional classifiers like Logisitic Regression clasifier, Decison Tree
+classifier and Random Forest Classifier
+
+
+4. Develop and deploy the clasisfier model using web API Flask framework
